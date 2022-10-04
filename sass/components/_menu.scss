@@ -1,0 +1,46 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  align-items:center
+}
+
+.menu-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.menu-list__link {
+  display: block;
+  padding: 32px 0;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+   transition: color $animation;
+
+   &:hover,
+   &:active {
+      color: $contrastColor;
+   }
+
+   &.curent {
+      position: relative;
+      color: $contrastColor;
+   }
+
+   &.curent::after {
+      display: block;
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+
+      background: $contrastColor;
+      border-radius: 2px;
+   }
+}

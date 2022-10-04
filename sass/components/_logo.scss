@@ -1,0 +1,19 @@
+.logo {
+  color: $contrastColor;
+  font-size: 26px;
+  font-family: $main-font;
+  font-weight: 700;
+  line-height: 1.19;
+}
+
+.header__logo {
+    margin-right: 93px;
+}
+
+.logo__dark {
+    color: $mainColor;
+}
+
+.logo__light {
+    color: $whiteColor;
+}

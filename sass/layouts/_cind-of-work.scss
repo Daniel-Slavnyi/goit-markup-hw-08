@@ -1,0 +1,41 @@
+.cind-of-work {
+  padding-top: 0;
+  text-align: center;
+}
+
+.cind-of-work__title {
+  margin-bottom: 50px;
+}
+
+.cind-of-work__list {
+  display: flex;
+  gap: 30px;
+}
+
+.cind-of-work__item {
+  position: relative;
+  width: 370px;
+
+}
+
+.cind-of-work__text-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.cind-of-work__text {
+  font-weight: 700;
+  line-height: calc(16/14);
+  text-transform: uppercase;
+  color: $whiteColor;
+}
+
+
