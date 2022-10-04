@@ -1,15 +1,18 @@
 .hero {
-  max-width: 1600px;
-  margin: 0 auto;  
-  padding: 200px 0;
+  // max-width: 1600px;
+  // margin: 0 auto;  
+  padding: 118px 0;
   background: linear-gradient(
     $hero-bg-cl,
     $hero-bg-cl
-  ), url(../img/background.jpg) no-repeat center top/cover;
+  ), url(../img/background.jpg) no-repeat center top / cover;
 
   text-align: center;
-  border: 1px solid #ECECEC;
   background-color: rgba(47, 48, 58, 1);
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 
   &__btn {
     margin-top: 30px;
