@@ -1,6 +1,11 @@
+
 .contacts-list {
   display: flex;
   margin-left: auto;
+  
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
 }
 
 .contacts-list > .contacts-list__item + .contacts-list__item {

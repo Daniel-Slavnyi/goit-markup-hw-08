@@ -3,9 +3,26 @@
 
     &__list {
         display: flex;
-        margin-top: 50px;
+        flex-wrap: wrap;
+        margin-top: 30px;
         justify-content: center;
         gap: 30px;
+
+        @media screen and(min-width: 1200px) {
+            margin-top: 50px;
+        }
+    }
+
+    &__item {
+        width: calc((100% - 30px) / 2);
+
+        @media screen and(min-width: 768px) {
+            width: calc((100% - 60px) / 3);
+        }
+
+        @media screen and(min-width: 1200px) {
+            width: calc((100% - 5 * 30px) / 6);
+        }
     }
 }
 
@@ -13,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    // width: 170px;
     height: 92px;
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;

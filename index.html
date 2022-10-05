@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container flex-wraper">
         <nav class="navigation">
           <a href="./index.html" class="header__logo logo"> 
@@ -60,8 +60,13 @@
             </a>
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-icon" width="40" height="40">
+            <use href="./img/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -315,114 +320,118 @@
           </ul>
         </div>
       </section>
-      <!-- <section class="section clients">
-        <h2 class="clients__title">Постійні клієнти</h2>
-        <ul class="clients__list">
-          <li class="clients__item">
-            <a href="#" class="clients__link">
-              <svg class="clients__icon" width="41px" height="47px">
-                <use href="./img/sprite.svg#icon-company1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="40px" height="52px">
-                <use href="./img/sprite.svg#icon-company2"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="43px" height="41px">
-                <use href="./img/sprite.svg#icon-company3"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="84px" height="41px">
-                <use href="./img/sprite.svg#icon-company4"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="63px" height="45px">
-                <use href="./img/sprite.svg#icon-company5"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients__item">
-            <a href="" class="clients__link">
-              <svg class="clients__icon" width="94px" height="44px">
-                <use href="./img/sprite.svg#icon-company6"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </section> -->
-    </main>
-    <!-- <footer class="contacts">
-      <div class="container d-flex">
-        <div class="footer-contacts">
-          <a href="/goit-markup-hw-01/index.html" class="logo contacts__logo">
-            Web<span class="logo__light">Studio</span>
-          </a>
-          <address class="adress">
-            <ul class="adress__list">
-              <li class="adress__item">
-                <a
-                  href="http://surl.li/dadrl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="adress__link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="adress__item">
-                <a href="mailto:info@devstudio.com" class="adress__link adress__link--opacity"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="adress__item">
-                <a href="tel:+380961111111" class="adress__link adress__link--opacity">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="social">
-          <p class="social__title">приєднуйтесь</p>
-          <ul class="social__list">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="20px" height="20px">
-                  <use href="./img/sprite.svg#icon-instagram"></use>
+      <section class="section clients">
+        <div class="container">
+          <h2 class="clients__title">Постійні клієнти</h2>
+          <ul class="clients__list">
+            <li class="clients__item">
+              <a href="#" class="clients__link">
+                <svg class="clients__icon" width="41px" height="47px">
+                  <use href="./img/sprite.svg#icon-company1"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="20px" height="20px">
-                  <use href="./img/sprite.svg#icon-twitter"></use>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="40px" height="52px">
+                  <use href="./img/sprite.svg#icon-company2"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="20px" height="20px">
-                  <use href="./img/sprite.svg#icon-facebook"></use>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="43px" height="41px">
+                  <use href="./img/sprite.svg#icon-company3"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon" width="20px" height="20px">
-                  <use href="./img/sprite.svg#icon-linkedin"></use>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="84px" height="41px">
+                  <use href="./img/sprite.svg#icon-company4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="63px" height="45px">
+                  <use href="./img/sprite.svg#icon-company5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__item">
+              <a href="" class="clients__link">
+                <svg class="clients__icon" width="94px" height="44px">
+                  <use href="./img/sprite.svg#icon-company6"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="contacts">
+      <div class="container d-flex">
+        <div class="wrap-adress-social">
+          <div class="footer-contacts">
+            <a href="/goit-markup-hw-01/index.html" class="logo contacts__logo">
+              Web<span class="logo__light">Studio</span>
+            </a>
+            <address class="adress">
+              <ul class="adress__list">
+                <li class="adress__item">
+                  <a
+                    href="http://surl.li/dadrl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="adress__link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="adress__item">
+                  <a href="mailto:info@devstudio.com" class="adress__link adress__link--opacity"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="adress__item">
+                  <a href="tel:+380961111111" class="adress__link adress__link--opacity">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social">
+            <p class="social__title">приєднуйтесь</p>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./img/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./img/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon" width="20px" height="20px">
+                    <use href="./img/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="footer-form">
           <p class="footer-form__title">
@@ -444,7 +453,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" data-modal-close>
@@ -495,6 +504,56 @@
         </form>
       </div>
     </div>
+    <!-- mobile MENU -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-icon" width="40" height="40">
+          <use href="./img/sprite.svg#icon-close-burger"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Студія</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a href="" class="mobile-menu__link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-contacts">
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link mobile-contacts__link--big">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts__item">
+          <a href="" class="mobile-contacts__link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link">Instagram</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link">Twitter</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link">Facebook</a>
+        </li>
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

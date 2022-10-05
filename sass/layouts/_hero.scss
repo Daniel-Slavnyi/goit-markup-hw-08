@@ -1,6 +1,5 @@
 .hero {
-  // max-width: 1600px;
-  // margin: 0 auto;  
+  //  
   padding: 118px 0;
   background: linear-gradient(
     $hero-bg-cl,
@@ -12,6 +11,8 @@
 
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
+    max-width: 1600px;
+   margin: 0 auto; 
   }
 
   &__btn {

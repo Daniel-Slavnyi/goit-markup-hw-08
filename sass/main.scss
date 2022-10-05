@@ -8,6 +8,8 @@
 
 @import "./components/titles";
 
+@import "./layouts/header";
+
 @import "./components/logo";
 
 @import "./components/menu";
@@ -27,5 +29,7 @@
 @import './layouts/_footer';
 
 @import './components/modal';
+
+@import "./components/burger";
 
 @import './layouts/portfolio';

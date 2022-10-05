@@ -5,7 +5,11 @@
 
 .menu-list {
   display: flex;
-  align-items:center
+  align-items:center;
+  
+  @media screen and(max-width: 767px) {
+    display: none;
+  }
 }
 
 .menu-list__item:not(:last-child) {
