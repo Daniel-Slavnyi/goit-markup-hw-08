@@ -18,6 +18,8 @@
 .contacts-list__link {
     display: flex;
     align-items: center;
+    font-size: 12px;
+    letter-spacing: 0.02em;
 
 
     font-weight: 500;
@@ -30,6 +32,10 @@
     &:focus {
         color: $contrastColor;
         fill: $contrastColor;
+    }
+
+    @media screen and(min-width: 1200px) {
+      font-size: 14px;
     }
 }
 

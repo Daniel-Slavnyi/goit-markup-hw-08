@@ -5,8 +5,17 @@
 }
 .wrapper-btn {
   display: flex;
-  justify-content: center;
   margin-bottom: 50px;
+  justify-content: center;
+
+
+  
+
+  @media screen and(max-width: 1199px) {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 30px;
+  }
 
   @media screen and(max-width: 767px) {
     flex-wrap: wrap;
@@ -15,9 +24,6 @@
     margin-bottom: 40px;
   }
 
-  @media screen and(min-width: 768px) {
-    gap: 8px;
-  }
 }
 
 .portfolio-btn {
