@@ -4,7 +4,7 @@
   background: linear-gradient(
     $hero-bg-cl,
     $hero-bg-cl
-  ), url(../img/bg/_sm-bg@1x.jpg) no-repeat center top / cover;
+  ), url(../img/bg/sm-bg@1x.jpg) no-repeat center top / cover;
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -12,7 +12,7 @@
       background: linear-gradient(
       $hero-bg-cl,
       $hero-bg-cl
-    ), url(../img/bg/_sm-bg@2x.jpg) no-repeat center top / cover;
+    ), url(../img/bg/sm-bg@2x.jpg) no-repeat center top / cover;
   }
 
   text-align: center;
@@ -28,7 +28,7 @@
     background: linear-gradient(
     $hero-bg-cl,
     $hero-bg-cl
-  ), url(../img/bg/_md-bg@1x.jpg) no-repeat center top / cover;
+  ), url(../img/bg/md-bg@1x.jpg) no-repeat center top / cover;
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -36,7 +36,7 @@
       background: linear-gradient(
       $hero-bg-cl,
       $hero-bg-cl
-    ), url(../img/bg/_md-bg@2x.jpg) no-repeat center top / cover;
+    ), url(../img/bg/md-bg@2x.jpg) no-repeat center top / cover;
   }
   }
 
@@ -44,7 +44,7 @@
     background: linear-gradient(
     $hero-bg-cl,
     $hero-bg-cl
-  ), url(../img/bg/_lg-bg@1x.jpg) no-repeat center top / cover;
+  ), url(../img/bg/lg-bg@1x.jpg) no-repeat center top / cover;
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -52,7 +52,7 @@
       background: linear-gradient(
       $hero-bg-cl,
       $hero-bg-cl
-    ), url(../img/bg/_lg-bg@2x.jpg) no-repeat center top / cover;
+    ), url(../img/bg/lg-bg@2x.jpg) no-repeat center top / cover;
   }
   }
 
